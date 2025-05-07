@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sistema-de-Delivery</name>
+    </assembly>
+    <members>
+        <member name="T:Sistema_de_Delivery.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Sistema_de_Delivery.Migrations.InitialCrea">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.InitialCrea.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.InitialCrea.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.InitialCrea.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Sistema_de_Delivery.Migrations.Cadastro">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.Cadastro.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.Cadastro.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.Cadastro.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Sistema_de_Delivery.Migrations.CadastroEPagamento">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.CadastroEPagamento.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.CadastroEPagamento.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.CadastroEPagamento.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Sistema_de_Delivery.Migrations.CriarTabelaPagamento">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.CriarTabelaPagamento.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.CriarTabelaPagamento.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.CriarTabelaPagamento.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Sistema_de_Delivery.Migrations.AtualizarPagamentoParaIntegracoes">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.AtualizarPagamentoParaIntegracoes.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.AtualizarPagamentoParaIntegracoes.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.Migrations.AtualizarPagamentoParaIntegracoes.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.AuthController.Cadastro(Sistema_de_Delivery.src.Models.ClienteCadastro)">
+            <summary>
+            Realiza o cadastro de um novo cliente.
+            </summary>
+            <param name="request">Objeto contendo as informações do cliente a ser cadastrado.</param>
+            <returns>Retorna uma mensagem de sucesso ou erro ao realizar o cadastro.</returns>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.AuthController.Login(Sistema_de_Delivery.src.DTOs.LoginRequest)">
+            <summary>
+            Realiza o login de um cliente e gera o token JWT.
+            </summary>
+            <param name="login">Objeto contendo o e-mail e senha do cliente para autenticação.</param>
+            <returns>Retorna o token JWT gerado se as credenciais forem válidas.</returns>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ClienteController.GetClientes">
+            <summary>
+            Retorna todos os clientes cadastrados.
+            </summary>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ClienteController.GetClienteById(System.Int32)">
+            <summary>
+            Retorna um cliente pelo ID.
+            </summary>
+            <param name="id">ID do cliente</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ClienteController.CreateCliente(Sistema_de_Delivery.src.Models.Cliente)">
+            <summary>
+            Cria um novo cliente.
+            </summary>
+            <param name="cliente">Objeto cliente a ser criado</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ClienteController.UpdateCliente(System.Int32,Sistema_de_Delivery.src.Models.Cliente)">
+            <summary>
+            Atualiza os dados de um cliente existente.
+            </summary>
+            <param name="id">ID do cliente a ser atualizado</param>
+            <param name="cliente">Objeto cliente com os dados atualizados</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ClienteController.DeleteCliente(System.Int32)">
+            <summary>
+            Remove um cliente pelo ID.
+            </summary>
+            <param name="id">ID do cliente a ser removido</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.EntregadorController.GetEntregadores">
+            <summary>
+            Retorna todos os entregadores cadastrados.
+            </summary>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.EntregadorController.GetEntregadorById(System.Int32)">
+            <summary>
+            Retorna um entregador específico pelo ID.
+            </summary>
+            <param name="id">ID do entregador</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.EntregadorController.CreateEntregador(Sistema_de_Delivery.src.Models.Entregador)">
+            <summary>
+            Cria um novo entregador.
+            </summary>
+            <param name="entregador">Objeto entregador a ser criado</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.EntregadorController.UpdateEntregador(System.Int32,Sistema_de_Delivery.src.Models.Entregador)">
+            <summary>
+            Atualiza os dados de um entregador existente.
+            </summary>
+            <param name="id">ID do entregador a ser atualizado</param>
+            <param name="entregador">Objeto com os novos dados do entregador</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.EntregadorController.DeleteEntregador(System.Int32)">
+            <summary>
+            Remove um entregador pelo ID.
+            </summary>
+            <param name="id">ID do entregador a ser removido</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PagamentoController.RegistrarPagamento(Sistema_de_Delivery.src.Models.Pagamento)">
+            <summary>
+            Registra um novo pagamento no sistema.
+            </summary>
+            <param name="pagamento">Objeto que contém os dados do pagamento a ser registrado.</param>
+            <returns>Retorna o pagamento criado com um código de status 201.</returns>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PagamentoController.SimularPix(System.Int32)">
+            <summary>
+            Simula a confirmação de pagamento via Pix, alterando o status do pagamento.
+            </summary>
+            <param name="id">ID do pagamento a ser simulado.</param>
+            <returns>Retorna a mensagem de confirmação do pagamento via Pix.</returns>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PagamentoController.ListarPagamentos">
+            <summary>
+            Lista todos os pagamentos registrados no sistema.
+            </summary>
+            <returns>Retorna uma lista com todos os pagamentos.</returns>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PagamentoController.ObterPagamentoPorId(System.Int32)">
+            <summary>
+            Obtém os detalhes de um pagamento específico pelo ID.
+            </summary>
+            <param name="id">ID do pagamento a ser retornado.</param>
+            <returns>Retorna os detalhes do pagamento encontrado.</returns>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PagamentoController.AtualizarStatusPagamento(System.Int32,System.String)">
+            <summary>
+            Atualiza o status de um pagamento existente.
+            </summary>
+            <param name="id">ID do pagamento a ser atualizado.</param>
+            <param name="novoStatus">Novo status a ser atribuído ao pagamento.</param>
+            <returns>Retorna um código de status 204 se a atualização for bem-sucedida.</returns>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PagamentoController.ExcluirPagamento(System.Int32)">
+            <summary>
+            Exclui um pagamento existente do sistema.
+            </summary>
+            <param name="id">ID do pagamento a ser excluído.</param>
+            <returns>Retorna um código de status 204 se a exclusão for bem-sucedida.</returns>
+        </member>
+        <member name="T:Sistema_de_Delivery.src.Controllers.PedidoController">
+            <summary>
+            Controlador responsável pela gestão de pedidos no sistema de delivery.
+            </summary>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.GetPedidos">
+            <summary>
+            Retorna todos os pedidos com informações de cliente e itens.
+            </summary>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.GetPedidosPorCliente(System.Int32)">
+            <summary>
+            Retorna os pedidos de um cliente específico.
+            </summary>
+            <param name="clienteId">ID do cliente</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.GetPedidosPorEntregador(System.Int32)">
+            <summary>
+            Retorna os pedidos atribuídos a um entregador específico.
+            </summary>
+            <param name="entregadorId">ID do entregador</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.GetPedidosPorStatus(System.String)">
+            <summary>
+            Retorna pedidos filtrados por status.
+            </summary>
+            <param name="status">Status do pedido</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.GetResumoStatus">
+            <summary>
+            Retorna um resumo da quantidade de pedidos por status.
+            </summary>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.ExportarPedidosCsv">
+            <summary>
+            Exporta os pedidos em formato CSV.
+            </summary>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.ExportarPedidosPdf">
+            <summary>
+            Exporta os pedidos em formato PDF.
+            </summary>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.CreatePedido(Sistema_de_Delivery.src.DTOs.PedidoDTO)">
+            <summary>
+            Cria um novo pedido com os itens informados.
+            </summary>
+            <param name="pedidoDTO">Dados do pedido</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.AtribuirEntregador(System.Int32,System.Int32)">
+            <summary>
+            Atribui um entregador a um pedido e atualiza o status.
+            </summary>
+            <param name="pedidoId">ID do pedido</param>
+            <param name="entregadorId">ID do entregador</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.PedidoController.AtualizarStatus(System.Int32,System.String)">
+            <summary>
+            Atualiza o status de um pedido.
+            </summary>
+            <param name="pedidoId">ID do pedido</param>
+            <param name="novoStatus">Novo status desejado</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ProdutoController.GetProdutos">
+            <summary>
+            Retorna todos os produtos disponíveis.
+            </summary>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ProdutoController.GetProdutoById(System.Int32)">
+            <summary>
+            Retorna um produto específico pelo ID.
+            </summary>
+            <param name="id">ID do produto</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ProdutoController.CreateProduto(Sistema_de_Delivery.src.Models.Produto)">
+            <summary>
+            Cria um novo produto.
+            </summary>
+            <param name="produto">Objeto produto a ser criado</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ProdutoController.UpdateProduto(System.Int32,Sistema_de_Delivery.src.Models.Produto)">
+            <summary>
+            Atualiza os dados de um produto existente.
+            </summary>
+            <param name="id">ID do produto a ser atualizado</param>
+            <param name="produto">Objeto com os novos dados do produto</param>
+        </member>
+        <member name="M:Sistema_de_Delivery.src.Controllers.ProdutoController.DeleteProduto(System.Int32)">
+            <summary>
+            Remove um produto pelo ID.
+            </summary>
+            <param name="id">ID do produto a ser removido</param>
+        </member>
+    </members>
+</doc>

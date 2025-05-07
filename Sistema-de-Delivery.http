@@ -1,0 +1,6 @@
+@Sistema_de_Delivery_HostAddress = http://localhost:5118
+
+GET {{Sistema_de_Delivery_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
