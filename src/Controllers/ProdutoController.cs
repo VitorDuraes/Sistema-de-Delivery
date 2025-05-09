@@ -53,6 +53,15 @@ namespace Sistema_de_Delivery.src.Controllers
             _context.SaveChanges();
             return CreatedAtAction(nameof(GetProdutoById), new { id = produto.Id }, produto);
         }
+        [HttpPost("lote")]
+        public IActionResult CriarProdutosEmLote([FromBody] List<Produto> produtos)
+        {
+            _context.Produtos.AddRange(produtos);
+            _context.SaveChanges();
+            return Ok(produtos);
+        }
+
+
 
         /// <summary>
         /// Atualiza os dados de um produto existente.

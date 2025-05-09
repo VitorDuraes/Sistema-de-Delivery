@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zVito\\OneDrive\\Desktop\\Sistema-de-Delivery\\Sistema-de-Delivery.csproj": {}
+    "C:\\Users\\zVito\\OneDrive\\Desktop\\DeliveryApp\\Sistema-de-Delivery\\Sistema-de-Delivery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zVito\\OneDrive\\Desktop\\Sistema-de-Delivery\\Sistema-de-Delivery.csproj": {
+    "C:\\Users\\zVito\\OneDrive\\Desktop\\DeliveryApp\\Sistema-de-Delivery\\Sistema-de-Delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zVito\\OneDrive\\Desktop\\Sistema-de-Delivery\\Sistema-de-Delivery.csproj",
+        "projectUniqueName": "C:\\Users\\zVito\\OneDrive\\Desktop\\DeliveryApp\\Sistema-de-Delivery\\Sistema-de-Delivery.csproj",
         "projectName": "Sistema-de-Delivery",
-        "projectPath": "C:\\Users\\zVito\\OneDrive\\Desktop\\Sistema-de-Delivery\\Sistema-de-Delivery.csproj",
+        "projectPath": "C:\\Users\\zVito\\OneDrive\\Desktop\\DeliveryApp\\Sistema-de-Delivery\\Sistema-de-Delivery.csproj",
         "packagesPath": "C:\\Users\\zVito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zVito\\OneDrive\\Desktop\\Sistema-de-Delivery\\obj\\",
+        "outputPath": "C:\\Users\\zVito\\OneDrive\\Desktop\\DeliveryApp\\Sistema-de-Delivery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,6 +57,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[9.0.4, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",

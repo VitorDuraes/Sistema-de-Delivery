@@ -3,8 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Sistema_de_Delivery.src.Data;
 using Sistema_de_Delivery.src.Services;
-using System.Reflection;
 using System.Text;
+using System.Reflection;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,15 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     };
                 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReact",
+        builder => builder.WithOrigins("http://localhost:3000") // URL do frontend React
+                          .AllowAnyMethod()
+                          .AllowAnyHeader()
+                          .AllowCredentials());
+
+});
 // Adiciona os controllers ao serviço
 builder.Services.AddControllers();
 
@@ -83,10 +93,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowReact");
 app.UseAuthentication();  // Adiciona autenticação
 app.UseAuthorization();   // Adiciona autorização
-
+app.UseHttpsRedirection();
 // Mapeia os controladores
 app.MapControllers();
 
